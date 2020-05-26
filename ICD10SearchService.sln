@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICD10SearchService", "ICD10SearchService.csproj", "{96479750-E645-4982-AD91-DEAC09230D2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICD10SearchService", "ICD10SearchService.csproj", "{96479750-E645-4982-AD91-DEAC09230D2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICD10SearchServiceTests", "..\ICD10SearchServiceTests\ICD10SearchServiceTests.csproj", "{D9225FCC-40FD-4D65-8056-5DA354050EEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{96479750-E645-4982-AD91-DEAC09230D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96479750-E645-4982-AD91-DEAC09230D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96479750-E645-4982-AD91-DEAC09230D2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9225FCC-40FD-4D65-8056-5DA354050EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9225FCC-40FD-4D65-8056-5DA354050EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9225FCC-40FD-4D65-8056-5DA354050EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9225FCC-40FD-4D65-8056-5DA354050EEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
