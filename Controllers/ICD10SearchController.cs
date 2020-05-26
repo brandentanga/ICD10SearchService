@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ICD10SearchService.Formatters;
+﻿using ICD10SearchService.Formatters;
 using ICD10SearchService.Generators;
 using ICD10SearchService.Engines;
 using ICD10SearchService.Mappers;

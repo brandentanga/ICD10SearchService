@@ -1,10 +1,8 @@
 ﻿using ICD10SearchService.Models;
 using static ICD10SearchService.Constants.Constants;
-using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
 namespace ICD10SearchService.Mappers

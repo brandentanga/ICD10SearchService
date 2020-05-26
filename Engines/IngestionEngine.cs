@@ -1,12 +1,9 @@
 ﻿using ICD10SearchService.Generators;
-using ICD10SearchService.Mappers;
 using ICD10SearchService.Models;
-using Microsoft.AspNetCore.SignalR;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 using static ICD10SearchService.Models.BagOfWord;
 using static ICD10SearchService.Models.Icd10CM;

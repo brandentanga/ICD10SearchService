@@ -31,7 +31,6 @@ namespace ICD10SearchService.Engines
                 {
                     var searchResult = new SearchResult()
                     {
-                        //Diagnosis = diagnoses[doc.DocumentName],
                         Diagnosis = DiagnosisMapper.Map(diagnoses[doc.DocumentName]),
                         RelevanceScore = doc.TFIDF
                     };
