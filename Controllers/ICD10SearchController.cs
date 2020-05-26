@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ICD10SearchService.Formatters;
-using ICD10SearchService.Ingestion;
+using ICD10SearchService.Generators;
+using ICD10SearchService.Engines;
 using ICD10SearchService.Mappers;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,9 +23,10 @@ namespace ICD10SearchService.Controllers
             var query = Request.Query;
             var searchRequest = SearchRequestMapper.Map(query);
 
-            var engine = new Engine();
-            engine.Execute();
-            var results = engine.Search(searchRequest.Terms);
+            var ingestion = new IngestionEngine();
+            ingestion.Execute(new DiagnosisGenerator(), new BagOfWordsGenerator());
+            var search = new SearchEngine(ingestion.BagOfWords, ingestion.Diagnoses);
+            var results = search.Search(searchRequest.Terms);
             
             return OutputFormatter.ToJson(results);
         }
